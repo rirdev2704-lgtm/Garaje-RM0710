@@ -1,0 +1,77 @@
+body {
+    font-family: 'Arial', sans-serif;
+    padding-top: 56px; /* Para la navbar fija */
+}
+
+.header-background {
+    background-image: url('https://t4.ftcdn.net/jpg/02/82/00/75/360_F_282007508_wdCUP7hUMNK1Cuzj7XmOcFmzyzJ0Nnp9.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    width: 100%;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.card {
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-title {
+    height: 3rem; /* Para dos líneas */
+    overflow: hidden;
+}
+
+.card-text {
+    height: 1.5rem; /* Para una línea */
+    overflow: hidden;
+}
+
+.card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.btn-primary {
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+#cartCount {
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+#loadingSpinner {
+    width: 3rem;
+    height: 3rem;
+}
+
+.modal-xl .modal-dialog {
+    max-width: 90%;
+}
